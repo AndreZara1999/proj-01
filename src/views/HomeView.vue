@@ -1,5 +1,5 @@
 <template>
-  <PrivatePageTemplate>
+  <PrivatePageTemplate pageTitle="Dashboard">
     <p>Hello</p>
   </PrivatePageTemplate>
 </template>
