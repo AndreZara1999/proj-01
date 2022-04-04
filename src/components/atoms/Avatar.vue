@@ -1,15 +1,14 @@
 <template>
-    <div class="w-48 rounded-full">
-        <!-- <div v-html="svgAvatar"></div> -->
-    </div>
+    <div class="w-[3rem] mx-auto rounded-full" v-html="svgAvatar"></div>
 </template>
 
 <script lang="ts">
     import Vue from 'vue';
 
     import { createAvatar } from '@dicebear/avatars';
-    // import * as style from '@dicebear/avatars-identicon-sprites';
-    new Vue({
+    import * as style from '@dicebear/avatars-identicon-sprites';
+
+    export default Vue.extend({
         name: "Avatar",
         data() {
             return {
@@ -18,11 +17,10 @@
         },
         methods: {
             createAvatar() : void {
-                console.log('Hello');
-                // this.svgAvatar = createAvatar(style, {
-                //     seed: 'custom-seed',
-                //     // ... and other options
-                // });
+                this.svgAvatar = createAvatar(style, {
+                    seed: 'custom-seed',
+                    // ... and other options
+                });
             }
         },
         mounted() {
