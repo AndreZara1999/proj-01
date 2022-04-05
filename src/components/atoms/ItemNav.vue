@@ -1,7 +1,7 @@
 <template>
     <router-link 
         :to='path' 
-        class="w-fill p-1 mt-1 text-center font-mono font-semibold text-white text-xs uppercase rounded-full bg-slate-800"
+        class="w-fill p-1 mt-1 text-center font-mono font-semibold text-white text-xs uppercase rounded-full bg-slate-800 cursor-pointer"
     >{{text}}</router-link>
 </template>
 
