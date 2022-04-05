@@ -1,7 +1,8 @@
 <template>
-    <div class="w-fill py-1 my-2 mx-2 font-mono font-normal text-xs">
-        <router-link :to='path'>{{text}}</router-link>
-    </div>
+    <router-link 
+        :to='path' 
+        class="w-fill p-1 mt-1 text-center font-mono font-semibold text-white text-xs uppercase rounded-full bg-slate-800"
+    >{{text}}</router-link>
 </template>
 
 <script lang="ts">

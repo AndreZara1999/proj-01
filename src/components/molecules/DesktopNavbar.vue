@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full hidden sm:hidden lg:flex flex-row flex-nowrap bg-sky-600">
+    <div class="w-full flex flex-col">
         <ItemNav path='/' text="Home" />
         <ItemNav path='/about' text="About" />
     </div>
