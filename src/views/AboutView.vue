@@ -1,21 +1,17 @@
 <template>
-  <!-- <div>
-    <ItemNav path='/' text="Home"/>
-    <div class="about">
-      <h1>This is an about page</h1>
-    </div>
-  </div> -->
-  <p>Hello</p>
+  <PrivatePageTemplate pageTitle='About'>
+    <p>About page</p>
+  </PrivatePageTemplate>
 </template>
 
 <script lang="ts">
   import Vue from 'vue';
   // COMPONENTS
-  // import ItemNav from '@/components/molecules/Navbar.vue';
+  import PrivatePageTemplate from '@/components/organisms/PrivatePageTemplate.vue';
 
   export default Vue.extend({
     components: {
-      // ItemNav
+      PrivatePageTemplate
     }
   })
 </script>
